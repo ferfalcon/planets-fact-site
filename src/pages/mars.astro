@@ -1,6 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro';
 import Layout from '../layouts/Layout.astro';
+
+import Navigation from '../components/Navigation.astro';
+import InnerNavigation from '../components/InnerNavigation.astro';
 import WikiLink from '../components/WikiLink.astro';
 import NumsFacts from '../components/NumsFacts.astro';
 ---
@@ -9,37 +11,35 @@ import NumsFacts from '../components/NumsFacts.astro';
 	<Navigation />
 </Layout>
 
-  <h1>Mars</h1>
+<h1>Mars</h1>
 
-  <!-- Overview Content Start -->
-  <p>Mars is the fourth planet from the Sun and the second-smallest planet 
-  in the Solar System, being larger than only Mercury. In English, Mars 
-  carries the name of the Roman god of war and is often referred to as 
-  the "Red Planet".</p>
+<InnerNavigation />
 
-  <WikiLink link="Mars"/>
-  <!-- Overview Content End -->
+<!-- Overview Content Start -->
+<p>Mars is the fourth planet from the Sun and the second-smallest planet 
+in the Solar System, being larger than only Mercury. In English, Mars 
+carries the name of the Roman god of war and is often referred to as 
+the "Red Planet".</p>
 
-  <!-- Internal Structure Content Start -->
-  <p>Like Earth, Mars has differentiated into a dense metallic core overlaid 
-  by less dense materials. Scientists initially determined that the core 
-  is at least partially liquid. Current models of its interior imply a 
-  core consisting primarily of iron and nickel with about 16–17% sulfur.</p>
+<WikiLink link="Mars"/>
+<!-- Overview Content End -->
 
-  <WikiLink link="Mars#Internal_structure"/>
-  <!-- Internal Structure Content End -->
+<!-- Internal Structure Content Start -->
+<p>Like Earth, Mars has differentiated into a dense metallic core overlaid 
+by less dense materials. Scientists initially determined that the core 
+is at least partially liquid. Current models of its interior imply a 
+core consisting primarily of iron and nickel with about 16–17% sulfur.</p>
 
-  <!-- Surface Geology Content Start -->
-  <p>Mars is a terrestrial planet whose surface consists of minerals containing 
-  silicon and oxygen, metals, and other elements that typically make up rock. 
-  The surface is primarily composed of tholeiitic basalt, although parts are 
-  more silica-rich than typical basalt.</p>
+<WikiLink link="Mars#Internal_structure"/>
+<!-- Internal Structure Content End -->
 
-  <WikiLink link="Mars#Surface_geology"/>
-  <!-- Surface Geology Content End -->
+<!-- Surface Geology Content Start -->
+<p>Mars is a terrestrial planet whose surface consists of minerals containing 
+silicon and oxygen, metals, and other elements that typically make up rock. 
+The surface is primarily composed of tholeiitic basalt, although parts are 
+more silica-rich than typical basalt.</p>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+<WikiLink link="Mars#Surface_geology"/>
+<!-- Surface Geology Content End -->
 
-  <NumsFacts rotation_time="1.03 Days" revolution_time="1.88 Years" radius="3,389.5 KM" average_temp="-28°c"/>
+<NumsFacts rotation_time="1.03 Days" revolution_time="1.88 Years" radius="3,389.5 KM" average_temp="-28°c"/>

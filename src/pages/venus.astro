@@ -1,6 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro';
 import Layout from '../layouts/Layout.astro';
+
+import Navigation from '../components/Navigation.astro';
+import InnerNavigation from '../components/InnerNavigation.astro';
 import WikiLink from '../components/WikiLink.astro';
 import NumsFacts from '../components/NumsFacts.astro';
 ---
@@ -9,37 +11,35 @@ import NumsFacts from '../components/NumsFacts.astro';
 	<Navigation />
 </Layout>
 
-  <h1>Venus</h1>
+<h1>Venus</h1>
 
-  <!-- Overview Content Start -->
-  <p>Venus is the second planet from the Sun. It is named after the 
-  Roman goddess of love and beauty. As the brightest natural object 
-  in Earth's night sky after the Moon, Venus can cast shadows and 
-  can be, on rare occasions, visible to the naked eye in broad daylight.</p>
+<InnerNavigation />
 
-  <WikiLink link="Venus"/>
-  <!-- Overview Content End -->
+<!-- Overview Content Start -->
+<p>Venus is the second planet from the Sun. It is named after the 
+Roman goddess of love and beauty. As the brightest natural object 
+in Earth's night sky after the Moon, Venus can cast shadows and 
+can be, on rare occasions, visible to the naked eye in broad daylight.</p>
 
-  <!-- Internal Structure Content Start -->
-  <p>The similarity in size and density between Venus and Earth suggests 
-  they share a similar internal structure: a core, mantle, and crust. 
-  Like that of Earth, Venusian core is most likely at least partially 
-  liquid because the two planets have been cooling at about the same rate.</p>
+<WikiLink link="Venus"/>
+<!-- Overview Content End -->
 
-  <WikiLink link="Venus#Internal_structure"/>
-  <!-- Internal Structure Content End -->
+<!-- Internal Structure Content Start -->
+<p>The similarity in size and density between Venus and Earth suggests 
+they share a similar internal structure: a core, mantle, and crust. 
+Like that of Earth, Venusian core is most likely at least partially 
+liquid because the two planets have been cooling at about the same rate.</p>
 
-  <!-- Surface Geology Content Start -->
-  <p>Much of the Venusian surface appears to have been shaped by volcanic activity. 
-  Venus has several times as many volcanoes as Earth, and it has 167 large 
-  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-  of this size on Earth is the Big Island of Hawaii.</p>
+<WikiLink link="Venus#Internal_structure"/>
+<!-- Internal Structure Content End -->
 
-  <WikiLink link="Venus#Surface_geology"/>
-  <!-- Surface Geology Content End -->
+<!-- Surface Geology Content Start -->
+<p>Much of the Venusian surface appears to have been shaped by volcanic activity. 
+Venus has several times as many volcanoes as Earth, and it has 167 large 
+volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
+of this size on Earth is the Big Island of Hawaii.</p>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+<WikiLink link="Venus#Surface_geology"/>
+<!-- Surface Geology Content End -->
 
-  <NumsFacts rotation_time="243 Days" revolution_time="224.7 Days" radius="6,051.8 KM" average_temp="471°c"/>
+<NumsFacts rotation_time="243 Days" revolution_time="224.7 Days" radius="6,051.8 KM" average_temp="471°c"/>
