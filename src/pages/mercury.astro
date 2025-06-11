@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import WikiLink from '../components/WikiLink.astro';
+import NumsFacts from '../components/NumsFacts.astro';
 ---
 
 <Layout>
@@ -41,14 +42,4 @@ import WikiLink from '../components/WikiLink.astro';
   02 Internal Structure
   03 Surface Geology
 
-  Rotation Time
-  58.6 Days
-
-  Revolution Time
-  87.97 Days
-
-  Radius
-  2,439.7 KM
-
-  Average Temp.
-  430°c
+  <NumsFacts rotation_time="58.6 Days" revolution_time="87.97 Days" radius="2,439.7 KM" average_temp="430°c"/>
